@@ -26,7 +26,7 @@ songItems.forEach((e, i) => {
   //console.log(e, i);
   e.getElementsByTagName("img")[i].src = songs[i].coverPath;
   e.getElementsByClassName("songName")[i].innerText = songs[i].songName;
-  console.log(e.getElementsByClassName("songName")[i].innerText);
+  //console.log(e.getElementsByClassName("songName")[i].innerText);
 });
 
 //Handle play/pause
@@ -45,7 +45,7 @@ masterPlay.addEventListener("click", () => {
   }
 });
 audioElement.addEventListener("timeupdate", () => {
-  //   console.log("timeupdate");
+  //  console.log("timeupdate");
   //update seekbar
   progress = parseInt((audioElement.currentTime / audioElement.duration) * 100);
   //   console.log(progress);
