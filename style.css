@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: antiquewhite;
+}
+nav {
+  font-family: "Nunito", sans-serif;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+
+  list-style-type: none;
+  height: 57px;
+  background: #000;
+  color: aliceblue;
+}
+nav ul li {
+  padding: 0 12px;
+}
+.brand img {
+  width: 49px;
+  margin: 0 14px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+.container {
+  min-height: 70vh;
+  background: #000;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  background-image: url("images/bg.jpg");
+
+  display: flex;
+  /* justify-content: space-evenly; */
+  margin: 22px 1em;
+  border-radius: 12px;
+}
+/* .songList {
+} */
+.songItem {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: white;
+  color: black;
+  margin: 3px 7px;
+  border-radius: 22px;
+}
+.songList .songItem img {
+  width: 50px;
+  border-radius: 22px;
+}
+/* .songListPlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+.timestamp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 6px;
+}
+.timestamp i {
+  margin: 0 2px;
+  cursor: pointer;
+}
+.songsItemContainer {
+  margin: 13px;
+}
+.bottom {
+  position: sticky;
+  height: 100px;
+  background: #000;
+  color: white;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#myProgressBar {
+  width: 80vw;
+  text-align: center;
+  cursor: pointer;
+}
+/* .icons {
+} */
+.icons i {
+  margin: 6px 5px;
+  cursor: pointer;
+}
+.icons i:hover {
+  color: rgb(15, 255, 155);
+}
+.songInfo {
+  position: absolute;
+  left: 10vw;
+  font-family: "Nunito", sans-serif;
+}
+.songInfo img {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  margin: 0 8px;
+}
